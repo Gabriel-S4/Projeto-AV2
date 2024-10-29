@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AV2 - Web Development</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+    <header>
+       
+        <nav>
+           
+            <ul class="menu-top">
+                
+                <li>
+                    <a href="" class="link">Home</a>
+                </li>
+                <li>
+                    <a href="" class="link">Contato</a>
+                </li>
+                <li>
+                    <a href="" class="link">Equipe</a>
+                </li>
+                <li>
+                    <a href="" class="link">Opiniões</a>
+                </li>
+           
+            </ul>
+        
+        </nav>
+    
+    </header>
+    
+    <main>
+        <article class="container-gallery">
+            <button class="pre-btn" id="pre-button" onclick="buttonPre()"><img src="assets/Images/arrow.png" alt=""></button>
+            <button class="nxt-btn" id="next-button" onclick="buttonNext()"><img src="assets/Images/arrow.png" alt=""></button>
+            <section class="gallery" id="gallery">
+                <div class="card-container" id="card-container">
+
+                        <div class="card" id="card" onmouseover="aumentarTamanho()" onmouseleave="diminuirTamanho()">
+                            
+                            <figure class="avatar" id="avatar">
+
+                                <div class="left-avatar" id="left-avatar">
+
+                                    <img class="figura" id="avatar-foto" src="assets/images/Gabriel.png" alt="">
+
+                                </div>
+
+                                <div class="right-avatar" id="right-avatar">
+
+                                    <p class="content-avatar-over" id="content-avatar-over">Estudante de Desenvolvimento Front End, Gamer e Editor de Fotos e Vídeos.</p>
+                                    
+                                    <blockquote class="content-avatar-leave" id="content-avatar-leave">Editor, Gamer.</blockquote>
+                                
+                                </div>
+
+                            </figure>
+
+                            <div class="name-avatar">
+
+                                <h2 class="titulo" >Gabriel Sá</h2>
+
+                            </div>
+
+                            <div class="container-btn">
+
+                                <input type="button" class="btn" id="btn-Gabriel" value="Mais Informações">
+                            
+                            </div>
+
+                        </div>
+
+                        <div class="card" id="card1" onmouseover="aumentarTamanho1()" onmouseleave="diminuirTamanho1()">
+                            
+                            <figure class="avatar" id="avatar1">
+
+                                <div class="left-avatar" id="left-avatar1">
+                                
+                                    <img class="figura" id="avatar-foto1" src="https://miamistonesource.com/wp-content/uploads/2018/05/no-avatar-25359d55aa3c93ab3466622fd2ce712d1.jpg" alt="">
+                                
+                                </div>
+
+                                <div class="right-avatar" id="right-avatar1">
+                                
+                                    <p class="content-avatar-over" id="content-avatar-over1">Criminoso brasileiro apontado um dos dois principais líderes da facção Comando Vermelho, juntamente com Luiz Fernando da Costa, o Fernandinho Beira-Mar.</p>
+                                    
+                                    <blockquote class="content-avatar-leave" id="content-avatar-leave1">Descrição Resumida.</blockquote>
+                                
+                                </div>
+                            
+                            </figure>
+                            
+                            <div class="name-avatar">
+
+                                <h2 class="titulo" >Alguém - 1</h2>
+                            
+                            </div>
+
+                            <div class="container-btn">
+                                
+                                <input type="button" class="btn" id="btn-1" value="Mais Informações">
+                            
+                            </div>
+                        
+                        </div>
+
+                        <div class="card" id="card2" onmouseover="aumentarTamanho2()" onmouseleave="diminuirTamanho2()">
+                            
+                            <figure class="avatar" id="avatar2">
+
+                                <div class="left-avatar" id="left-avatar2">
+                                
+                                    <img class="figura" id="avatar-foto2" src="https://miamistonesource.com/wp-content/uploads/2018/05/no-avatar-25359d55aa3c93ab3466622fd2ce712d1.jpg" alt="">
+                                
+                                </div>
+
+                                <div class="right-avatar" id="right-avatar2">
+                                
+                                    <p class="content-avatar-over" id="content-avatar-over2"> traficante e narcoterrorista colombiano que foi o fundador e único líder do Cartel de Medellín. Apelidado de "o rei da cocaína", Escobar é o criminoso mais rico da história, tendo acumulado um patrimônio líquido estimado em 30 bilhões de dólares no momento de sua morte — equivalente a 64 bilhões de dólares em 2021 — enquanto seu cartel de drogas monopolizou o comércio de cocaína nos Estados Unidos na década de 1980 e início dos anos 1990.</p>
+                                    
+                                    <blockquote class="content-avatar-leave" id="content-avatar-leave2">Descrição Resumida.</blockquote>
+                                
+                                </div>
+                            
+                            </figure>
+                            
+                            <div class="name-avatar">
+
+                                <h2 class="titulo" >Alguém - 2</h2>
+                            
+                            </div>
+
+                            <div class="container-btn">
+                                
+                                <input type="button" class="btn" id="btn-2" value="Mais Informações">
+                            
+                            </div>
+                        
+                        </div>
+
+                        <div class="card" id="card3" onmouseover="aumentarTamanho3()" onmouseleave="diminuirTamanho3()">
+                            
+                            <figure class="avatar" id="avatar3">
+
+                                <div class="left-avatar" id="left-avatar3">
+                                
+                                    <img class="figura" id="avatar-foto3" src="https://miamistonesource.com/wp-content/uploads/2018/05/no-avatar-25359d55aa3c93ab3466622fd2ce712d1.jpg" alt="">
+                                
+                                </div>
+
+                                <div class="right-avatar" id="right-avatar3">
+                                
+                                    <p class="content-avatar-over" id="content-avatar-over3"> traficante e narcoterrorista colombiano que foi o fundador e único líder do Cartel de Medellín. Apelidado de "o rei da cocaína", Escobar é o criminoso mais rico da história, tendo acumulado um patrimônio líquido estimado em 30 bilhões de dólares no momento de sua morte — equivalente a 64 bilhões de dólares em 2021 — enquanto seu cartel de drogas monopolizou o comércio de cocaína nos Estados Unidos na década de 1980 e início dos anos 1990.</p>
+                                    
+                                    <blockquote class="content-avatar-leave" id="content-avatar-leave3">Descrição Resumida.</blockquote>
+                                
+                                </div>
+                            
+                            </figure>
+                            
+                            <div class="name-avatar">
+
+                                <h2 class="titulo" >Alguém - 3</h2>
+                            
+                            </div>
+
+                            <div class="container-btn">
+                                
+                                <input type="button" class="btn" id="btn-3" value="Mais Informações">
+                            
+                            </div>
+                        
+                        </div>
+
+                        <div class="card" id="card4" onmouseover="aumentarTamanho4()" onmouseleave="diminuirTamanho4()">
+                            
+                            <figure class="avatar" id="avatar4">
+
+                                <div class="left-avatar" id="left-avatar4">
+                                
+                                    <img class="figura" id="avatar-foto4" src="https://miamistonesource.com/wp-content/uploads/2018/05/no-avatar-25359d55aa3c93ab3466622fd2ce712d1.jpg" alt="">
+                                
+                                </div>
+
+                                <div class="right-avatar" id="right-avatar4">
+                                
+                                    <p class="content-avatar-over" id="content-avatar-over4"> traficante e narcoterrorista colombiano que foi o fundador e único líder do Cartel de Medellín. Apelidado de "o rei da cocaína", Escobar é o criminoso mais rico da história, tendo acumulado um patrimônio líquido estimado em 30 bilhões de dólares no momento de sua morte — equivalente a 64 bilhões de dólares em 2021 — enquanto seu cartel de drogas monopolizou o comércio de cocaína nos Estados Unidos na década de 1980 e início dos anos 1990.</p>
+                                    
+                                    <blockquote class="content-avatar-leave" id="content-avatar-leave4">Descrição Resumida.</blockquote>
+                                
+                                </div>
+                            
+                            </figure>
+                            
+                            <div class="name-avatar">
+
+                                <h2 class="titulo" >Alguém - 4</h2>
+                            
+                            </div>
+
+                            <div class="container-btn">
+                                
+                                <input type="button" class="btn" id="btn-4" value="Mais Informações">
+                            
+                            </div>
+                        
+                        </div>
+
+                        <div class="card" id="card5" onmouseover="aumentarTamanho5()" onmouseleave="diminuirTamanho5()">
+                            
+                            <figure class="avatar" id="avatar5">
+
+                                <div class="left-avatar" id="left-avatar5">
+                                
+                                    <img class="figura" id="avatar-foto5" src="https://miamistonesource.com/wp-content/uploads/2018/05/no-avatar-25359d55aa3c93ab3466622fd2ce712d1.jpg" alt="">
+                                
+                                </div>
+
+                                <div class="right-avatar" id="right-avatar5">
+                                
+                                    <p class="content-avatar-over" id="content-avatar-over5"> traficante e narcoterrorista colombiano que foi o fundador e único líder do Cartel de Medellín. Apelidado de "o rei da cocaína", Escobar é o criminoso mais rico da história, tendo acumulado um patrimônio líquido estimado em 30 bilhões de dólares no momento de sua morte — equivalente a 64 bilhões de dólares em 2021 — enquanto seu cartel de drogas monopolizou o comércio de cocaína nos Estados Unidos na década de 1980 e início dos anos 1990.</p>
+                                    
+                                    <blockquote class="content-avatar-leave" id="content-avatar-leave5">Descrição Resumida.</blockquote>
+                                
+                                </div>
+                            
+                            </figure>
+                            
+                            <div class="name-avatar">
+
+                                <h2 class="titulo" >Alguém - 5</h2>
+                            
+                            </div>
+
+                            <div class="container-btn">
+                                
+                                <input type="button" class="btn" id="btn-5" value="Mais Informações">
+                            
+                            </div>
+                        
+                    </div>
+            </section>
+
+        </article>
+        <!-- <section class="card-container">
+
+             <div class="menor">
+                <figure>
+                    <img class="figura" src="https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg" alt="">
+                </figure>
+                <h2 class="titulo" >Título</h2>
+            </div>
+
+            <div class="maior">
+
+            </div>
+            
+
+        </section> -->
+    </main>
+
+    <footer>   
+        <img class="copianaocomedia" src="https://i.pinimg.com/736x/d3/24/91/d32491823e17f9e8716d72984a71f637.jpg" alt="">
+        <blockquote>
+
+            <p>Direitos Reservados</p>
+
+        </blockquote>
+
+        <a href="">
+
+            <img class="insta-icon" src="https://cdn.icon-icons.com/icons2/1582/PNG/512/instagram_108043.png" alt="">
+        
+        </a>
+
+        <a href="">
+
+            <img class="twitter-icon" src="https://cdn.icon-icons.com/icons2/1211/PNG/512/1491579542-yumminkysocialmedia22_83078.png" alt="">
+        
+        </a>
+
+    </footer>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
